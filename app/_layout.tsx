@@ -1,5 +1,9 @@
 import { Stack } from "expo-router";
 
 export default function RootLayout() {
-  return <Stack />;
+  return <Stack>
+    <Stack.Screen name="(tab)" options={{ headerShown: true }} />
+    <Stack.Screen name="index" options={{ headerShown: true }} />
+    <Stack.Screen name="about" options={{ headerShown: true }} />
+  </Stack>;
 }

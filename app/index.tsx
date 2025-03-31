@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { View,Text } from "react-native";
 
 const Index = () => {
@@ -7,6 +8,7 @@ const Index = () => {
     alignItems:"center",
   }}>
     <Text style={{fontSize:30 , fontWeight:"700"}}>"Hello Welcome to React Native Expo"</Text>
+    <Link href={"/about"}> Go to About</Link>
   </View>
 }
 export default Index;
